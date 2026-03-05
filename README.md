@@ -32,6 +32,30 @@ Automação em Formulário Web (DVWA): Ataque direcionado à interface de login 
 
 Password Spraying em SMB: Enumeração de usuários de rede e teste de senhas comuns para evitar bloqueio de contas.
 
+# 🛡️ Desafio de Projeto: Quebra de Senhas com Força Bruta
+
+Este projeto demonstra a execução de um ataque de força bruta (Brute Force) contra uma aplicação web vulnerável (DVWA) hospedada em um servidor Metasploitable 2.
+
+## 🚀 Tecnologias Utilizadas
+* **Kali Linux**: Sistema operacional para testes de intrusão.
+* **Metasploitable 2**: Máquina alvo com serviços vulneráveis.
+* **Hydra**: Ferramenta utilizada para a quebra de senhas via protocolo HTTP-POST.
+* **Curl**: Utilizado para diagnóstico de conectividade e análise de headers HTTP.
+
+## 🛠️ Metodologia e Desafios
+Durante o desenvolvimento, foram enfrentados e solucionados os seguintes desafios técnicos:
+
+1. **Instabilidade do Medusa**: A ferramenta Medusa v2.3 apresentou erros 404 intermitentes devido à sensibilidade na formação dos cabeçalhos de Cookie.
+2. **Diagnóstico de Endpoint**: Utilizei `curl -s -o /dev/null -w "%{http_code}"` para validar que o caminho `/dvwa/login.php` estava ativo (HTTP 200).
+3. **Tratamento de Falsos Positivos**: Identifiquei que a omissão ou erro na string de falha (`F=`) resultava em todas as senhas sendo marcadas como válidas. A solução foi mapear a mensagem real do servidor: "Login failed".
+
+## 📊 Resultado Final
+O ataque foi bem-sucedido, identificando a credencial correta após sanitização da wordlist e ajuste dos parâmetros de formulário.
+
+* **Alvo:** 192.168.56.101
+* **Usuário:** admin
+* **Senha identificada:** password
+
 🛡️ Medidas de Mitigação
 
 Após os testes, foram documentadas as seguintes recomendações:
