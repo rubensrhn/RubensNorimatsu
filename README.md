@@ -71,4 +71,4 @@ Desabilitação de Protocolos Inseguros: Substituição de FTP por SFTP/SSH.
 ⚠️ Aviso Legal (Disclaimer)
 Este projeto foi realizado em um ambiente de laboratório controlado para fins estritamente educacionais. Nunca execute ferramentas de varredura ou ataque em redes ou sistemas sem autorização expressa por escrito.
 
-Desenvolvido por [Rubens Norimatsu]
+Desenvolvido por Rubens Norimatsu
