@@ -1,7 +1,7 @@
 # Rubens Norimatsu
 ### Analista de Infraestrutura e Segurança da Informação | Blue Team | Microsoft 365 & Email Security
 
-Olá! Sou um profissional de Tecnologia da Informação com mais de 15 anos de experiência em ambientes corporativos de grande porte. 
+Olá! Sou um profissional de Tecnologia da Informação com experiência em ambientes corporativos de médio e grande porte. 
 Minha trajetória é marcada pela gestão de infraestruturas críticas e, mais recentemente, pelo foco intensivo em **Cybersecurity e Operações de Defesa (Blue Team)**.
 
 ## 🛡️ Foco Profissional & Especialidades
